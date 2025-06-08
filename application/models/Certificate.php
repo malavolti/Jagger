@@ -106,7 +106,7 @@ class Certificate
     }
 
     public function setKeyname($keyname = null) {
-        $this->keyname = str_replace(' ', '', $keyname);
+        $this->keyname = $keyname ? str_replace(' ', '', $keyname):'';
 
         return $this;
     }
